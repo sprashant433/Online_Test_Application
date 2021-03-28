@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head></head>
+	<body>
+		
+		<div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm fixed-top">
+			<h5 class="my-0 mr-md-auto font-weight-normal"><a [routerLink] = "['/']"><img src="../assets/images/quizmain-removebg-preview.png" style="height: 40px;width:90px;"></a></h5>
+			<nav class="my-2 my-md-0 mr-md-3">
+			  <a class="p-2 text-dark" [routerLink] = "['/about']">About</a>
+			  <span *ngIf ='uname!=""' class = "p-2 text-dark"> |&nbsp; {{uname}}</span>
+			  <a *ngIf ='uname==""' class="p-2 text-dark" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Sign in</a>
+			</nav>
+			<a *ngIf ='uname!=""' class="btn btn-sm" [routerLink] = "['/']" (click) = 'onlogout()'><i class="bi bi-power"></i>&nbsp;LogOut</a>
+			<a *ngIf ='uname==""' class="btn btn-lg" [routerLink] = "['/create']">Create an account</a>
+		</div>
+		<div id="id01" class="modal">
+  
+			<form class="modal-content animate" action="/action_page.php" method="post">
+			  <div class="imgcontainer">
+				<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+				</div>
+		  
+			  <form class="form-signin" style="border: 1; text-align: center;" (ngSubmit) = "onsubmit(signinform)" #signinform = "ngForm">
+				<img class="mb-4" src="../../assets/images/quizlog-removebg-preview.png" alt="" width="72" height="72">
+				<h1 class="h2 mb-3 font-weight-normal">Sign in</h1>
+				<label for="email" class="sr-only">Email address</label>
+				<input type="email" id="email" class="form-control" placeholder="Email address" name="Umail" required autofocus ngModel email #email="ngModel">
+				<small *ngIf = '!email.valid &&  email.touched' class="text-danger float-left py-2">Please Enter Valid Email</small>
+				<label for="pass" class="sr-only">Password</label>
+				<input type="password" id="pass" class="form-control" placeholder="Password" name="Upass" ngModel required #pass="ngModel">
+				
+			
+				<div id = "chk" style="text-align: right;"><a [routerLink] = "['/forget']">Forgot password?</a></div>
+				
+				<button type = "submit" class="btn btn-lg  btn-block mt-5 mb-3" [disabled] = '!signinform.valid'>Sign in</button>
+				<p id = "bott">Don't have an account? <a [routerLink] = "['/create']">Sign up</a></p>
+			</form>
+		  
+		
+			</form>
+		  </div>
+		
+		  <script>
+			var modal = document.getElementById('id01');
+			window.onclick = function(event) {
+				if (event.target == modal) {
+					modal.style.display = "none";
+				}
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,28 @@
+#head1{
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    color:#0B5345 ;
+    font-size: 20px;
+
+}
+#con{
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    color:#0B5345 ;
+    font-size: 20px;
+
+}
+.card-text{
+    color: #909497;
+}
+#name{
+    background-color: #CA6F1E;
+    margin-top: -40px;
+}
+#heading{
+    font-size:60px;
+    color: #CA6F1E;
+}
+#img{
+    margin-top:-100px;
+}

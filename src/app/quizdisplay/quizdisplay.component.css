@@ -1,0 +1,208 @@
+body{
+    background-color:#E5E7E9;
+}
+#block{
+    background-color: #B9770E;
+    height: 40px;
+}
+.sidenav {
+    height: 100%;
+    width: 205px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+
+    background-color: #B9770E;
+    overflow-x: hidden;
+    padding-top: 200px;
+}
+.main {
+    
+    margin-left: 210px;
+    font-size: 28px;
+    padding: 10px 10px 10px;
+    background-color: white;
+    overflow-x: hidden;
+    margin-right:10px;
+    margin-top:10px;
+}
+.top{
+    background-color:#E5E7E9;
+    margin-top:none;
+}
+
+.sidenav a:hover {
+color: #f1f1f1;
+}
+  
+.lh-100 { line-height: 1; }
+.lh-125 { line-height: 1.25; }
+#Heading{
+    background-color: #E5E7E9;
+    
+}
+.inst{
+    font-size:15px;
+}
+#track{
+    margin-left: 200px;
+    background-color: white;
+    padding:15px;
+
+}
+#qno{
+    color:black;
+    font-weight: bold;
+    
+}
+#quest{
+    color:black;
+    font-weight: bold;
+    font-size: 20px;
+}
+#navbtn1{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn1:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn2{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn2:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn3{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn3:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn4{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn4:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn5{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn5:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn6{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn6:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn7{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn7:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn8{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn8:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn9{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn9:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#navbtn10{
+    background-color: #F5CBA7 ;
+    color: black;
+    border: none;
+    width:100%;
+}
+#navbtn10:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#prev{
+    background-color: #AF601A;
+    border: none;
+    color: white;
+}
+#prev:hover{
+    background-color: #EB984E ;
+    border: none;
+   
+}
+#prev:focus {outline:none !important;}
+#next{
+    background-color: #AF601A;
+    border: none;
+    color: white;
+}
+#next:hover{
+    background-color: #EB984E ;
+    border: none;
+    
+}
+#next:focus {outline:none !important;}
+
+#review{
+    background-color: #F39C12;
+    border: none;
+    color: white;
+}
+#review:hover{
+    background-color: #EB984E ;
+    border: none;
+}
+#review:focus {outline:none !important;}
+#vis{
+    color:#5bc0de;
+}
+#nvis{
+    color: #F5CBA7 ;
+}
+#rev{
+    color: #F39C12;
+
+}
+#time{
+    background-color: #82E0AA;
+}

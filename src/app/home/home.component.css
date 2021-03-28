@@ -1,0 +1,19 @@
+.btn{
+    background-color: #CA6F1E;
+    color: white;
+    border: none;
+}
+.btn:hover{
+    background-color: #935116 ;
+    border: none;
+}
+#back{
+    font-family: 'Do Hyeon', sans-serif;
+    text-align: center;
+    color:#0B5345 ;
+}
+#back p{
+    color: #909497;
+}
+
+

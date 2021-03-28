@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    
+    <body>
+        <div class="sidenav">
+            <div *ngIf ='uname!=""'>
+                <div style = "padding:10px;"><strong>Name:&nbsp;</strong>{{uname}}</div>
+                <br>
+            </div>
+
+            <div style = "padding:10px;"><strong>Questions:-</strong></div>
+            <div>
+                <table  style="margin-left:4px">
+                    <tr>
+                      <td><a id = "navbtn1" class="btn"  role="button" (click) ="btncontent(0)">1</a></td>
+                      <td><a id = "navbtn2" class="btn"  role="button" (click) ="btncontent(1)">2</a></td>
+                      <td><a id = "navbtn3" class="btn"  role="button" (click) ="btncontent(2)">3</a></td>
+                      <td><a id = "navbtn4" class="btn"  role="button" (click) ="btncontent(3)">4</a></td>
+                      <td><a id = "navbtn5" class="btn"  role="button" (click) ="btncontent(4)">5</a></td>
+                    </tr>
+                    <tr>
+                      <td><a id = "navbtn6" class="btn"  role="button" (click) ="btncontent(5)">6</a></td>
+                      <td><a id = "navbtn7" class="btn"  role="button" (click) ="btncontent(6)">7</a></td>
+                      <td><a id = "navbtn8" class="btn"  role="button" (click) ="btncontent(7)">8</a></td>
+                      <td><a id = "navbtn9" class="btn"  role="button" (click) ="btncontent(8)">9</a></td>
+                      <td><a id = "navbtn10" class="btn"  role="button" (click) ="btncontent(9)">10</a></td>
+                    </tr>
+                   
+                    
+                </table>
+            </div>
+            
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="text-center">
+                <a class="btn btn-danger text-center" role="button" (click) = "homecnf()"><i class="bi bi-house-fill"></i> Back to Home</a>
+            </div>
+        </div>
+
+        <div id="track">
+            <span style="padding-right: 40px;">Answered:&nbsp;<i id = "vis" class="bi bi-square-fill"></i> </span>
+            <span style="padding-right: 40px;padding-left: 40px;">Not Answered:&nbsp;<i id = "nvis" class="bi bi-square-fill"></i> </span>
+            <span style="padding-right: 40px;padding-left: 40px;">Review:&nbsp;<i id = "rev" class="bi bi-square-fill"></i>  </span>
+            <span style="padding-right: 40px;padding-left: 40px; ">Time Left:&nbsp;<span id="time">{{min}} Min {{timeLeft}} sec</span> </span>
+
+        </div>
+        <div class="main">
+            <div id="Heading" class="media text-muted pt-3">
+                <div  class="media-body pb-2 mb-0 small lh-125 border-bottom border-gray">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <h6 id="qno"><strong class="text-dark"></strong></h6>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+        
+            <div class="my-3 p-3 bg-white rounded shadow-lg">
+
+                <div class="row">
+                    <div class="col"><div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div id = "quest" class="d-flex justify-content-between align-items-center w-100">
+                
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="w-100"></div>
+                    <div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="op1" name="op" class="custom-control-input" >
+                                    <label class="custom-control-label" for="op1"><h6 id= "option1"><strong class="text-gray-dark"></strong></h6></label>
+                                </div>
+                                
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                    <div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="op2" name="op" class="custom-control-input" >
+                                    <label class="custom-control-label" for="op2"><h6 id= "option2"><strong class="text-gray-dark"></strong></h6></label>
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
+                
+                    <div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+        
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="op3" name="op" class="custom-control-input">
+                                    <label class="custom-control-label" for="op3"><h6 id= "option3"><strong class="text-gray-dark"></strong></h6></label>
+                                </div>
+                            
+                            </div>
+                            
+                        </div>
+                    </div>
+                
+                
+                    <div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                        
+                                <div class="custom-control custom-radio">
+                                    <input type="radio" id="op4" name="op" class="custom-control-input" >
+                                    <label class="custom-control-label" for="op4"><h6 id= "option4"><strong class="text-gray-dark"></strong></h6></label>
+                                </div>
+                            
+                            </div>
+                        </div>
+                    </div> 
+                
+            </div>
+       
+            <div class="text-center">
+                <span style="padding-right: 40px;"><button type="button" class="btn" id = "review" (click)="review()"><i class="bi bi-eye-fill"></i> Marked for Review</button></span>
+                <span style="padding-right: 40px;"><button type="button" class="btn" id= "prev" (click)="prev()"><i class="bi bi-arrow-bar-left"></i> Previous</button></span>
+                <span style="padding-right: 40px;"><button type="button" class="btn" id= "next" (click)="next()">Next <i class="bi bi-arrow-bar-right"></i></button></span>
+        
+                <span style="padding-right: 40px;"><button type="button" class="btn btn-info" id= "savenext" (click)="savenext()"> Save & Next <i class="bi bi-arrow-bar-right"></i></button></span>
+                <span *ngIf="i==9"><a id= "submitquiz" class="btn btn-success" role="button" (click)="submitquiz()">Submit Quiz</a></span>
+                
+            </div>
+            
+        </div>
+        
+    </body>
+</html>
+

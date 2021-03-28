@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body >
+        <div class="sidenav"></div>
+        
+        <div class="main">
+            <div id="Heading" class="media text-muted pt-3">
+                <div  class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                    <div class="d-flex justify-content-between align-items-center w-100">
+                        <strong class="text-dark"> &nbsp;Quiz Instruction</strong>
+                    
+                    </div>
+                    
+                </div>
+                
+            </div>
+            
+            <div class="row">
+                <div  class="col">
+                   
+                    <div class="inst">
+                        <br>This quiz consists of 10 multiple-choice questions. Keep the following in mind:
+<br><br>
+<ul>
+    <li><strong>Multiple Attempts -</strong> You will have <em>unlimited</em> attempts for this quiz.</li>
+<li><strong>Timing -</strong> You will need to complete each of your attempts in one sitting, as you are allotted 15 minutes to complete each attempt.</li>
+<li><strong>Answers -</strong> You may review your answer-choices and compare them to the correct answers after your final submission.</li>
+
+</ul>
+To start, click the <strong>"Start Quiz"</strong> button. When finished, click the <strong>"Submit Quiz"</strong> button.
+                    </div>
+                </div>
+            </div>
+            <div class="my-3 p-3 bg-white rounded shadow-lg">
+
+                <div class="row">
+                    <div id ="Heading" class="col"><div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <strong class="text-dark">Quiz Information</strong>
+                            
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div class="media text-muted pt-3">
+                            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                                <div class="d-flex justify-content-between align-items-center w-100">
+                                <h6><strong class="text-gray-dark">Quiz Section: {{qname}}</strong></h6>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col"><div class="media text-muted pt-3">
+                        <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                            <div class="d-flex justify-content-between align-items-center w-100">
+                                <h6><strong class="text-gray-dark">Total Duration: 15 Minutes</strong></h6>
+                            
+                            </div>
+                            
+                        </div>
+                        </div>
+                    </div>
+                    <div class="w-100"></div>
+                    <div class="col">
+                        <div class="media text-muted pt-3">
+                            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                                <div class="d-flex justify-content-between align-items-center w-100">
+            
+                                <h6><strong class="text-gray-dark">Total Screen Question: 10</strong></h6>
+                                
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="media text-muted pt-3">
+                            <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                                <div class="d-flex justify-content-between align-items-center w-100">
+                            
+                                <h6><strong class="text-gray-dark">Points: 100 </strong></h6>
+                                
+                                </div>
+                            </div>
+                            </div>
+                    </div>
+                  </div>
+                
+            </div>
+            <div class="text-center">
+              
+               <span><a class="btn btn-danger" role="button" (click) = "homecnf()"><i class="bi bi-house-fill"></i> Back to Home</a></span>
+                <span><a class="btn btn-success" [routerLink] = "['/quizdisplay']" role="button"><i class="bi bi-hourglass-top"></i> Start Quiz</a></span>
+              </div>
+            
+        </div>
+  </body>
+</html>
