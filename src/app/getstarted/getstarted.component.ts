@@ -6,10 +6,12 @@ import { QuizcontentsService } from '../services/quizcontents.service';
   templateUrl: './getstarted.component.html',
   styleUrls: ['./getstarted.component.css']
 })
-export class GetstartedComponent {
-
+export class GetstartedComponent implements OnInit {
 
 constructor(private _getstart:QuizcontentsService){}
+ngOnInit(){
+  
+}
 
 sentpath(path:string)
 {

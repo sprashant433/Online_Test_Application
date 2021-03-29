@@ -10,36 +10,34 @@ import { QuizcontentsService } from '../services/quizcontents.service';
 })
 export class ForgetpassComponent implements OnInit {
 
-  constructor(private _service:QuizcontentsService,private router:Router) { }
+	constructor(private _service:QuizcontentsService,private router:Router) { }
 
-  ngOnInit(): void {
-  }
+	ngOnInit(): void {
+	}
 
-  onsubmit(form:NgForm)
-  {
-    var ask = window.confirm("Are you sure want to Change Password ?");
-		if (ask){
-      var flag=0;
-      var temp_email = form.value.Umail;
-      for(var i=0;i<this._service.UserPass.length;++i)
-      {
-        if(temp_email==this._service.UserPass[i].Umail){
-          flag=1;
-          break;
-        }
-  
-      }
-      if(flag==1){
-        this._service.UserPass[i].Upass = form.value.Upass;
-        alert("Password Successfully Updated!");
-        this.router.navigate(['/']);
-        
-      }
-      else{
-        alert("Email Doesn't Exist.");
-      }
+	onsubmit(form:NgForm)
+	{
+		var ask = window.confirm("Are you sure want to Change Password ?");
+		if(ask){
+			var flag=0;
+			var temp_email = form.value.Umail;
+			for(var i=0;i<this._service.UserPass.length;++i){
+				if(temp_email==this._service.UserPass[i].Umail){
+					flag=1;
+					break;
+				}
+
+			}
+
+			if(flag){
+				this._service.UserPass[i].Upass = form.value.Upass;
+				alert("Password Successfully Updated!");
+				this.router.navigate(['/']);
+			
+			}
+			else{
+				alert("Email Doesn't Exist.");
+			}
 		}
-    
-  }
-
+	}
 }

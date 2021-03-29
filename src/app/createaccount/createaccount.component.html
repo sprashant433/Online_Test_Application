@@ -1,39 +1,42 @@
 <!DOCTYPE html>
 <html>
-	<head></head>
-	<body>
-		<div class="row justify-content-center">
-			<div class="col-md-6 text-left bg-white rounded shadow-lg mb-5 mt-5 py-3">
-				<img class="rounded mx-auto d-block mb-4" src="../../assets/images/quizlog-removebg-preview.png" width="72" height="72" >
-				<h1 class="h2 mb-3 font-weight-normal text-center">Sign Up</h1>
-				<br>
-				<form (ngSubmit) = "onsubmit(signupform)" #signupform = "ngForm">
-					<div class="form-row">
-						<div class="form-group col-md-6">
-							<label for="fname">First Name</label>
-							<input type="text" class="form-control" id="fname" name="Ufname" ngModel required  #fname="ngModel">
-							<small *ngIf = '!fname.valid &&  fname.touched' class="text-danger">Please Enter Your name</small>
-						</div>
-						<div class="form-group col-md-6">
-							<label for="lname">Last Name</label>
-							<input type="text" class="form-control" id="lname" name="Ulname" ngModel>
-						</div>
+<head></head>
+<body>
+	<div class="row justify-content-center">
+		<div class="col-md-6 text-left bg-white rounded shadow-lg mb-5 mt-5 py-3">
+			<img class="rounded mx-auto d-block mb-4" src="../../assets/images/quizlog-removebg-preview.png" width="72" height="72" >
+			<h1 class="h2 mb-3 font-weight-normal text-center">Create your Quiz Account</h1><br>
+			<form (ngSubmit) = "onsubmit(signupform)" #signupform = "ngForm">
+				<div class="form-row">
+					<div class="form-group col-md-6">
+						<label for="fname">First Name</label>
+						<input type="text" class="form-control" id="fname" name="Ufname" ngModel required  #fname="ngModel">
+						<small *ngIf = '!fname.valid &&  fname.touched' class="text-danger">Please Enter Your name</small>
 					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="john@abc.com" name="Umail" ngModel required email #email="ngModel">
-						<small *ngIf = '!email.valid &&  email.touched' class="text-danger">Please Enter Valid Email</small>
+
+					<div class="form-group col-md-6">
+						<label for="lname">Last Name</label>
+						<input type="text" class="form-control" id="lname" name="Ulname" ngModel>
 					</div>
-					<div class="form-group">
-						<label for="pass">Password</label>
-						<input type="password" class="form-control" id="pass" name="Upass" ngModel required #pass="ngModel">
-						<small *ngIf = '!pass.valid &&  pass.touched' class="text-danger">Please Enter Password</small>
-					</div>
-					<button type="submit" class="btn btn-primary float-right" [disabled] = '!signupform.valid'>Sign Up</button>
-				</form>
-			</div>
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="john@abc.com" name="Umail" ngModel required email #email="ngModel">
+					<small *ngIf = '!email.valid &&  email.touched' class="text-danger">Please Enter Valid Email</small>
+				</div>
+
+				<div class="form-group">
+					<label for="pass">Password</label>
+					<input type="password" class="form-control" id="pass" name="Upass" ngModel required #pass="ngModel">
+					<small *ngIf = '!pass.valid &&  pass.touched' class="text-danger">Please Enter Password</small>
+				</div>
+				
+				<button type="submit" class="btn btn-primary float-right" [disabled] = '!signupform.valid'>Create Account</button>
+			</form>
 		</div>
-  </body>
+	</div>
+</body>
 </html>
 <app-footer></app-footer>
 

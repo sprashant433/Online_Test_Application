@@ -1,45 +1,48 @@
 <app-navbar></app-navbar>
 <!doctype html>
-<html lang="en">
-	<body >
-		<div class="container" >
-			<div class="d-flex align-items-center p-3 my-3 text-white-50 rounded shadow-lg">
-				<img class="mr-3" src="../../assets/images/hat2.svg" alt="" width="60" height="60">
-				<div class="lh-100">
-				<h6 class="mb-0 text-white lh-100">Quizes Catalog's</h6>
-				</div>
-			</div>
-			<div class="my-5 p-3 bg-white rounded shadow-lg">
-				<h6 class="border-bottom border-gray pb-2 mb-0"> Live Quizes</h6>
-				<div class="media text-muted pt-3">
-				<img src="../../assets/images/pencil.svg" width="40" height="40">
-				<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-					<div class="d-flex justify-content-between align-items-center w-100">
-					<strong class="text-gray-dark">GK</strong>
-					<a class="btn btn-outline-success" [routerLink] = "['/quizhome']" role="button" (click)="sentpath('GK')" >Attempt</a>
-					</div>
-				</div>
-				</div>
-				<div class="media text-muted pt-3">
-				<img src="../../assets/images/pencil.svg" width="40" height="40">
-				<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-					<div class="d-flex justify-content-between align-items-center w-100">
-					<strong class="text-gray-dark">Technology</strong>
-					<a class="btn btn-outline-success" [routerLink] = "['/quizhome']" role="button" (click)="sentpath('Technology')">Attempt</a>
-					</div>
-				</div>
-				</div>
-				<div class="media text-muted pt-3">
-				<img src="../../assets/images/pencil.svg" width="40" height="40">
-				<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-					<div class="d-flex justify-content-between align-items-center w-100">
-					<strong class="text-gray-dark">Apptitude</strong>
-					<a class="btn btn-outline-success" [routerLink] = "['/quizhome']" role="button" (click)="sentpath('Apptitude')" >Attempt</a>
-					</div>
-				</div>
-				</div>	
+<html>
+<body >
+	<div class="container" >
+		<div class="d-flex align-items-center p-3 my-3 text-white-50 rounded shadow-lg">
+			<img class="mr-3" src="../../assets/images/hat2.svg" alt="" width="60" height="60">
+			<div class="lh-100">
+			<h6 class="mb-0 text-white lh-100">Quizes Catalog's</h6>
 			</div>
 		</div>
-	</body>
+
+		<div class="my-5 p-3 bg-white rounded shadow-lg">
+			<h6 class="border-bottom border-gray pb-2 mb-0"> Live Quizes</h6>
+			<div class="media text-muted pt-3">
+				<img src="../../assets/images/pencil.svg" width="40" height="40">
+				<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+					<div class="d-flex justify-content-between align-items-center w-100">
+						<strong class="text-gray-dark">GK</strong>
+						<a class="btn btn-outline-success" [routerLink] = "['/quizhome']" role="button" (click)="sentpath('GK')" >Attempt</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="media text-muted pt-3">
+				<img src="../../assets/images/pencil.svg" width="40" height="40">
+				<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+					<div class="d-flex justify-content-between align-items-center w-100">
+						<strong class="text-gray-dark">Technology</strong>
+						<a class="btn btn-outline-success" [routerLink] = "['/quizhome']" role="button" (click)="sentpath('Technology')">Attempt</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="media text-muted pt-3">
+				<img src="../../assets/images/pencil.svg" width="40" height="40">
+				<div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+					<div class="d-flex justify-content-between align-items-center w-100">
+						<strong class="text-gray-dark">Aptitude</strong>
+						<a class="btn btn-outline-success" [routerLink] = "['/quizhome']" role="button" (click)="sentpath('Aptitude')" >Attempt</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+</body>
 </html>
 <app-footer></app-footer>

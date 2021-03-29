@@ -7,28 +7,28 @@
         Review & Result
     </a>
 </div>
+
 <div class="collapse" id="collapseExample">
     <div class="card card-body">
-    <div style="background-color: #85C1E9 ;padding:10px;"><h3>Your Score:&nbsp;{{point}}/100</h3></div>
-
-    <table class="table" >
-        <thead>
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Questions</th>
-            <th scope="col">Correct Answer</th>
-            <th scope="col">Your Answer</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr *ngFor = 'let item of filecontent'>
-            <th scope="row">{{item.qid}}</th>
-            <td>{{item.qtext}}</td>
-            <td>{{item.ans}}</td>
-            <td [ngClass]="{greenClass: item.col, redClass: !item.col}">{{item.uans}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
+		<div style="background-color: #85C1E9 ;padding:10px;"><h3>Your Score:&nbsp;{{point}}/100</h3></div>
+		<table class="table">
+			<thead>
+				<tr>
+					<th scope="col">#</th>
+					<th scope="col">Questions</th>
+					<th scope="col">Correct Answer</th>
+					<th scope="col">Your Answer</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr *ngFor = 'let item of filecontent'>
+					<th scope="row">{{item.qid}}</th>
+					<td>{{item.qtext}}</td>
+					<td>{{item.ans}}</td>
+					<td [ngClass]="{greenClass: item.col, redClass: !item.col}">{{item.uans}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
 </div>
 <app-footer></app-footer>

@@ -8,19 +8,14 @@ import { QuizcontentsService } from '../services/quizcontents.service';
   styleUrls: ['./quizhome.component.css']
 })
 export class QuizhomeComponent implements OnInit  {
+	qname:string;
 
-  qname:string;
-  
-  constructor(private _quizservice:QuizcontentsService,private router:Router){
-    
-  }
-  ngOnInit()
-  {
-    this.qname = this._quizservice.path;
-  }
+	constructor(private _quizservice:QuizcontentsService,private router:Router){}
+	ngOnInit(){
+	this.qname = this._quizservice.path;
+	}
 
-  homecnf()
-	{
+	homecnf(){
 		var ask = window.confirm("You will be redirected to Home Page.");
 		if (ask) {
 			this.router.navigate(['/']);

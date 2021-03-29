@@ -12,12 +12,11 @@ export class NavbarComponent implements OnInit {
 	constructor(private _service:QuizcontentsService, private router:Router){}
 	ngOnInit() {
 		this.uname = this._service.currentu;
-		
 	}
-	onlogout()
-	{
-		var ask = window.confirm("Are you sure want to LogOut?");
-		if (ask){
+
+	onlogout(){
+		var ask = window.confirm("Are you sure want to SignOut?");
+		if(ask){
 			this._service.currentu = "";
 			this.uname = this._service.currentu;
 		}
@@ -46,7 +45,7 @@ export class NavbarComponent implements OnInit {
 			this.router.navigate(['/']);
 			
 		}
-		else if (flag==11){
+		else if(flag==11){
 			alert("Incorrect Password");
 		}
 		else{

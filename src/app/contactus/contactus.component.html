@@ -1,36 +1,37 @@
 <app-navbar></app-navbar>
 <!DOCTYPE html>
 <html>
-	<head></head>
-	<body>
-		<div class="row justify-content-center">
-			<div class="col-md-4 text-left bg-white rounded shadow-lg mb-5 mt-5  py-3">
-					<div><h3><strong>Contact us</strong></h3></div>
-					<br>
-				<form (ngSubmit) = "onsubmit(signupform)" #signupform = "ngForm">
-					<div class="form-row">
-						<div class="form-group col-12">
-							<label for="fname">Name</label>
-							<input type="text" class="form-control" id="fname" name="Ufname" ngModel required  #fname="ngModel">
-							<small *ngIf = '!fname.valid &&  fname.touched' class="text-danger">Please Enter Your name</small>
-						</div>
-						
-					</div>
-					<div class="form-group">
-						<label for="email">Email</label>
-						<input type="email" class="form-control" id="email" placeholder="john@abc.com" name="Umail" ngModel required email #email="ngModel">
-						<small *ngIf = '!email.valid &&  email.touched' class="text-danger">Please Enter Valid Email</small>
-					</div>
-					<div class="form-group">
-						<label>Your Message</label>
-                        <textarea class="text-left" name="text" rows="4" cols="47"></textarea>
-	
-					</div>
-					<button type="submit" class="btn btn-primary float-right" [disabled] = '!signupform.valid'>Submit</button>
-				</form>
-			</div>
+<head></head>
+<body>
+	<div class="row justify-content-center">
+		<div class="col-md-4 text-left bg-white rounded shadow-lg mb-5 mt-5  py-3">
+			<div><h3><strong>Contact us</strong></h3></div><br>
+			<form (ngSubmit) = "onsubmit(signupform)" #signupform = "ngForm">
+				<div class="form-row">
+					<div class="form-group col-12">
+						<label for="fname">Name</label>
+						<input type="text" class="form-control" id="fname" name="Ufname" ngModel required  #fname="ngModel">
+						<small *ngIf = '!fname.valid &&  fname.touched' class="text-danger">Please Enter Your name</small>
+					</div>	
+				</div>
+
+				<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" class="form-control" id="email" placeholder="john@abc.com" name="Umail" ngModel required email #email="ngModel">
+					<small *ngIf = '!email.valid &&  email.touched' class="text-danger">Please Enter Valid Email</small>
+				</div>
+
+				<div class="form-group">
+					<label>Your Message</label>
+					<textarea class="text-left" name="text" rows="4" cols="47"></textarea>
+
+				</div>
+				
+				<button type="submit" class="btn btn-primary float-right" [disabled] = '!signupform.valid'>Submit</button>
+			</form>
 		</div>
-  </body>
+	</div>
+</body>
 </html>
 <app-footer></app-footer>
 
