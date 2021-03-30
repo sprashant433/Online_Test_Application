@@ -1,12 +1,15 @@
-# Ota
+# ONLINE TEST APPLICATION
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
+## About:
+
+This **Online Test Application** system secure, professional web-based questionnaire Easy to use, for business, training, and educational assessment with instant score
+tests and quizzes saving you hours of paperwork.This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.5.
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Key F
 
 Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
 
