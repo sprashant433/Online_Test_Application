@@ -1,7 +1,7 @@
 # ONLINE TEST APPLICATION
 
 ## Screenshots & Project Overview:
-**NOTE:** Please access the above folder for **Screenshots:*Screenshots.pdf** and for **Project Overview:*Project-Overview.pdf***
+**NOTE:** Please access the above folder for **Screenshots:** *Screenshots.pdf* and for **Project Overview:** *Project-Overview.pdf*
 
 ## About:
 
