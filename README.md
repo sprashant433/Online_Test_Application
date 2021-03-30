@@ -9,9 +9,16 @@ tests and quizzes saving you hours of paperwork.This project was generated with 
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Key F
+## Key Features:-
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Clean User Interface for better Interactions.
+- Contains three types of quiz categories - GK, Technology, Aptitude.
+- Easily navigate the question while playing the quiz.
+- Color indication for Answered, Unanswered questions, Mark for review questions during quiz reading.
+- Color indication for Correct, Incorrect, and not attempted questions in the “Review & Result” section.
+- The Timer is set at the start of the quiz.
+- Automatic quiz submissions are activated at the end of time.
+- The Color of the timer changes as there is less time left.
 
 ## Build
 
