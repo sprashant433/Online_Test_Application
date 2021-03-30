@@ -9,7 +9,7 @@ tests and quizzes saving you hours of paperwork.This project was generated with 
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Key Features:-
+## Key Features:
 
 - Clean User Interface for better Interactions.
 - Contains three types of quiz categories - GK, Technology, Aptitude.
@@ -20,18 +20,8 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 - Automatic quiz submissions are activated at the end of time.
 - The Color of the timer changes as there is less time left.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Conclusion:
+The **Online Test Application** is user-friendly, very simple and convenient to use. The system is complete in that it is operational and under test
+by entering the data and getting the reports in the correct order. But there is always room for improvement. During the development of this, coding standards are
+followed for ease of maintenance and scalability. The project has been successfully designed and is tested for accuracy and quality. During this project, I achieved
+all the goals and this project meets the needs of the assigned requirements.
